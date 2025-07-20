@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+@tailwind utilities;
+
+.ibm-plex-sans-thin {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.ibm-plex-sans-bold {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html,
+body {
+  background: #181B1F;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex !important;
+  transition-timing-function: linear !important
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.swiper-free-mode>.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.gradient-border::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(93.44deg, #FF7750 -4.56%, #BD5969 56.15%, #4B2494 107.86%) padding-box,
+    linear-gradient(180deg, rgba(255, 255, 255, 0) -1.67%, rgba(255, 255, 255, 0) 53.32%) border-box;
+  mask: linear-gradient(#e32b2b 0 0) content-box, linear-gradient(#f52323 0 0) padding-box;
+  mask-composite: exclude;
+  box-shadow: 0px 0px 1px 0px #000000E5;
+  transition: background 2000ms ease, mask 2000ms ease;
+}
