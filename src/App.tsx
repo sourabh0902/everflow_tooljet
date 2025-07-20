@@ -1,6 +1,6 @@
 import Body from './components/Body'
-import Navbar from './components/navbar'
 import Carousel from './components/Carousel'
+import Navbar from './components/Navbar'
 
 const App = () => {
   return (

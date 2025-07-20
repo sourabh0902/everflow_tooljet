@@ -1,7 +1,5 @@
-@import "tailwindcss";
-
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import "tailwindcss";
 @tailwind utilities;
 
 .ibm-plex-sans-thin {
@@ -30,14 +28,14 @@
 
 html,
 body {
-  background: #181B1F;
+  background: #181b1f;
   width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
   display: flex !important;
-  transition-timing-function: linear !important
+  transition-timing-function: linear !important;
 }
 
 .swiper-wrapper {
@@ -47,7 +45,7 @@ body {
   transition-timing-function: linear !important;
 }
 
-.swiper-free-mode>.swiper-wrapper {
+.swiper-free-mode > .swiper-wrapper {
   transition-timing-function: linear !important;
 }
 
@@ -61,10 +59,22 @@ body {
   left: 0;
   padding: 1px;
   border-radius: 16px;
-  background: linear-gradient(93.44deg, #FF7750 -4.56%, #BD5969 56.15%, #4B2494 107.86%) padding-box,
-    linear-gradient(180deg, rgba(255, 255, 255, 0) -1.67%, rgba(255, 255, 255, 0) 53.32%) border-box;
-  mask: linear-gradient(#e32b2b 0 0) content-box, linear-gradient(#f52323 0 0) padding-box;
+  background: linear-gradient(
+        93.44deg,
+        #ff7750 -4.56%,
+        #bd5969 56.15%,
+        #4b2494 107.86%
+      )
+      padding-box,
+    linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) -1.67%,
+        rgba(255, 255, 255, 0) 53.32%
+      )
+      border-box;
+  mask: linear-gradient(#e32b2b 0 0) content-box,
+    linear-gradient(#f52323 0 0) padding-box;
   mask-composite: exclude;
-  box-shadow: 0px 0px 1px 0px #000000E5;
+  box-shadow: 0px 0px 1px 0px #000000e5;
   transition: background 2000ms ease, mask 2000ms ease;
 }

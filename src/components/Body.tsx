@@ -1,4 +1,3 @@
-import React from 'react'
 import GridSection from './GridSection'
 import Input from './Input'
 

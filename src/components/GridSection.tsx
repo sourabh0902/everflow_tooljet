@@ -1,5 +1,3 @@
-import React from 'react'
-
 const GridSection = () => {
     return (
         <div className='grid-lines absolute w-full h-full top-1/2 left-1/2 -translate-1/2'>

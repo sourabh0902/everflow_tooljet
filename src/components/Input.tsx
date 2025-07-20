@@ -41,7 +41,6 @@ const Input = () => {
             setIsSubmitting(true);
             // Simulate submission
             setTimeout(() => {
-                console.log('Submitted:', inputValue);
                 setIsSubmitting(false);
                 setInputValue('');
                 setIsFocused(false);

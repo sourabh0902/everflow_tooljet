@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Navbar = () => {
     return (
         <nav className=' border-b border-solid border-[#363636]'>
